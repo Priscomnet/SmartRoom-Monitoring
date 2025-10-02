@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+    list-style: none;
+}
+.hero{
+    min-height: 100vh;
+    background-color: gray;
+    background: url(back.JPG)no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.hero nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 65%;
+    padding: 10px 25px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    gap: 2rem;
+    padding: 10px 25px;
+    background-color: white;
+    border-radius: 1em;
+}
+nav ul a{
+    text-decoration: none;
+    font-family: 1em;
+    font-weight: bold;
+    color: black;
+}
+nav ul a:hover{
+    border-block-end: 2px solid black;
+}
+nav button{
+    padding: 8px 25px;
+    background-color: white;
+    color:black;
+    font-weight: bold;
+    border-radius: .8rem;
+    margin-right: 10px;
+    border:none;
+    cursor: pointer;
+}
+nav button:nth-child(2){
+    background-color: grey;
+    color: white;
+}
+nav button:hover{
+    box-shadow: inset 0 0 20px gray;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width: 500px;
+    text-align: center;
+}
+.content img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border:5px solid black;
+}
+.content h1{
+    font-size: 3rem;
+    color:black;
+}
+.content p{
+    font-size: 1rem;
+    font-weight: bold;
+    color:black;
+    background-color: rgba(225, 225,225, 0.3);
+    backdrop-filter: blur(20px);
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+aside{
+    max-width: 30;
+    min-height: 100vh;
+    padding: 10px 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 3%;
+    left: 0;
+    box-shadow: -8px 0 16px rgba(225, 225,225, 0.3);
+    border-radius: .5em;
+}
+aside h1{
+    background-color: rgba(225, 225,225, 0.3);
+    padding: 14px 10px;
+    border-radius: .5em;
+    color: white;
+}
+aside li{
+    padding: 15px 20px;
+    border-block-start: 1px solid black;
+    border-block-end: 1px solid grey;
+    cursor: pointer;
+    transition: 0.5s;
+}
+aside li:hover{
+    padding: 15px 45px;
+}
+aside a{
+    color:white;
+    margin-left:10px;
+    text-decoration: none;
+}
+aside li:hover{
+    padding: 15px 45px;
+}
+aside a{
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+}
+aside a i{
+    margin-right: 30px;
+    font-size: 2rem; 
+}
